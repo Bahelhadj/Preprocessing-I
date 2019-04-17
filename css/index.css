@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -362,9 +358,8 @@ p {
 }
 .container .rezbod {
   display: flex;
-  width: 800px;
-  width: 100%;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 35%;
 }
 .container .rezbod .leftcol {
   width: 35%;
@@ -374,6 +369,7 @@ p {
   margin: 0 2.5%;
   margin-top: 2.5%;
   padding: 1%;
+  width: 100%;
 }
 @media (max-500px) {
   .container .rezbod .leftcol {
@@ -394,6 +390,7 @@ p {
   background: white;
   margin: 0%;
   margin-bottom: 5%;
+  width: 100%;
 }
 .container .rezbod .rightcol2 {
   width: 55%;
@@ -407,7 +404,4 @@ p {
     flex-direction: column;
     background: red;
   }
-}
-.container .segundo {
-  margin-bottom: 5%;
 }

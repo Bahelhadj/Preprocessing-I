@@ -32,9 +32,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -161,15 +158,15 @@ p {
 	}
 	.rezbod {
 		display: flex;
-		width: 800px;
-		width: 100%;
-		justify-content: space-around;
+		flex-direction: column;
+		width: 35%;
 		.leftcol {
 			.left;
 			background: @mainblue;
 			margin: 0 2.5%;
 			margin-top: 2.5%;
 			padding: 1%;
+			width: 100%;
 			@media(max-500px) {
 				width: 100%;
 			}
@@ -186,6 +183,7 @@ p {
 			background: white;
 			margin: 0%;
 			margin-bottom: 5%;
+			width: 100%;
 		}
 		.rightcol2 {
 			.right;
@@ -199,9 +197,6 @@ p {
 			background: red;
 		}
 
-	}
-	.segundo {
-		margin-bottom: 5%;
 	}
 	.footer {
 	}
