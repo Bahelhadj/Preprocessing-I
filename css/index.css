@@ -133,6 +133,15 @@ body {
 * {
   font-size: 62.5%;
 }
+.bodrez {
+  display: flex;
+  flex-direction: column;
+}
+.centertext {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
 h2 {
   font-weight: bold;
   font-size: 1.2rem;
@@ -148,10 +157,11 @@ b {
 }
 @font-face {
   font-family: Nike;
-  src: url("Fonts/Nike.otf") format("opentype");
+  src: url("/Fonts/Nike.otf") format("opentype");
 }
 .container {
   max-width: 800px;
+  height: 100vw;
   width: 100%;
   margin: 0 auto;
   background: #f3f3f3;
@@ -319,8 +329,8 @@ b {
 }
 .container .whitemid .about {
   font-family: 'Nike';
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: 1200;
+  font-size: 2.5rem;
   margin: auto;
   width: 50%;
   text-align: center;
@@ -347,7 +357,8 @@ b {
 .container .midsect {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  Margin-top: 2.5%;
 }
 .container .midsect .rezbod {
   display: flex;
@@ -357,6 +368,9 @@ b {
 .container .midsect .rezbod .leftcol {
   background: lightseagreen;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
 }
 .container .midsect .rezbod .leftcol2 {
   background: white;
@@ -371,6 +385,9 @@ b {
 .container .midsect .rezbod2 .rightcol {
   background: lightseagreen;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
 }
 .container .midsect .rezbod2 .rightcol2 {
   background: white;

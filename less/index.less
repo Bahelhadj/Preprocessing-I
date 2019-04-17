@@ -58,6 +58,15 @@ html, body {
 * {
 	font-size: 62.5%;
 }
+.bodrez {
+	display: flex;
+	flex-direction: column;
+}
+.centertext {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
 h2 {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -73,10 +82,11 @@ b {
 }
 @font-face {
 	font-family: Nike;
-	src: url("Fonts/Nike.otf")format("opentype");
+	src: url("/Fonts/Nike.otf")format("opentype");
 }
 .container {
 	max-width: 800px;
+	height: 100vw;
 	width:100%;
 	margin: 0 auto;
 	background: @hoody;
@@ -117,8 +127,8 @@ b {
 		border-top: @hoody;
 		.about {
 			font-family:'Nike';
-			font-weight: 900;
-			font-size: 2rem;
+			font-weight: 1200;
+			font-size: 2.5rem;
 			margin: auto;
 			width: 50%;
 			text-align: center;
@@ -146,14 +156,15 @@ b {
 	.midsect {
 		display: flex;
 		width: 100%;
-		justify-content: space-between;
+		justify-content: space-evenly;
+		Margin-top: 2.5%;
 		.rezbod {
-			display: flex;
-			flex-direction: column;
+			.bodrez;
 			width: 35%;
 			.leftcol {
 				background: @mainblue;
 				width: 100%;
+				.centertext;
 			}
 			.leftcol2 {
 				background: white;
@@ -161,13 +172,13 @@ b {
 			}
 		}
 		.rezbod2 {
-			display: flex;
-			flex-direction: column;
+			.bodrez;
 			width: 55%;
 			margin: 0;
 			.rightcol {
 				background: @mainblue;
 				width: 100%;
+				.centertext;
 			}
 	
 			.rightcol2 {
