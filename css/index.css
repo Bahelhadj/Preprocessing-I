@@ -1,1 +1,395 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  font-size: 62.5%;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+b {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+p {
+  width: 100%;
+  padding: 20px;
+}
+@font-face {
+  font-family: Nike;
+  src: url("Fonts/Nike.otf") format("opentype");
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background: #f3f3f3;
+  border-radius: 20px 20px 0px 0px;
+}
+.container .bluetop {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  height: 200px;
+  background: lightseagreen;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 20px 20px 0px 0px;
+}
+.container .bluetop .name {
+  color: white;
+  width: 48%;
+  padding: 2%;
+  margin-top: 75px;
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: 'Berkshire Swash';
+  margin: auto;
+  animation: text-flicker-in-glow 4s linear both;
+}
+@keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  10.1% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  10.2% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  20.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+}
+.container .bluetop .pic {
+  border: solid 10px #f3f3f3;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.container .whitemid {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  background: #f3f3f3;
+  height: 82px;
+  border-bottom: solid 2px #cbbe8a;
+  border-top: #f3f3f3;
+}
+.container .whitemid .about {
+  font-family: 'Nike';
+  font-weight: 900;
+  font-size: 2rem;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding-left: 20px;
+}
+.container .whitemid .emptea {
+  width: 50%;
+}
+.container .infos {
+  display: flex;
+  width: 100%;
+  margin-top: 2.5%;
+}
+.container .infos .infobar {
+  display: flex;
+  border-right: solid 2px #cbbe8a;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+}
+.container .infos .last {
+  border-right: none;
+}
+.container .rezbod {
+  display: flex;
+  width: 800px;
+  width: 100%;
+  justify-content: space-around;
+}
+.container .rezbod .leftcol {
+  width: 35%;
+  background: lightseagreen;
+  margin: 0 2.5%;
+  margin-top: 2.5%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+.container .rezbod .rightcol {
+  width: 55%;
+  background: lightseagreen;
+  margin: 0 2.5%;
+  margin-top: 2.5%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+.container .rezbod .leftcol2 {
+  width: 35%;
+  background: white;
+  margin: 0%;
+  margin-bottom: 5%;
+  padding: %;
+}
+.container .rezbod .rightcol2 {
+  width: 55%;
+  background: white;
+  margin: 0%;
+  margin-bottom: 5%;
+  padding: %;
+}
+.container .segundo {
+  margin-bottom: 5%;
+}
