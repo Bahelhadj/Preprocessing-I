@@ -126,14 +126,6 @@ table {
 * {
   box-sizing: border-box;
 }
-.right {
-  width: 55%;
-}
-.left {
-  width: 35%;
-  display: flex;
-  justify-content: center;
-}
 html,
 body {
   height: 100%;
@@ -153,10 +145,6 @@ h3 {
 b {
   font-weight: 700;
   font-size: 1.1rem;
-}
-p {
-  width: 100%;
-  padding: 20px;
 }
 @font-face {
   font-family: Nike;
@@ -356,52 +344,35 @@ p {
 .container .infos .last {
   border-right: none;
 }
-.container .rezbod {
+.container .midsect {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.container .midsect .rezbod {
   display: flex;
   flex-direction: column;
   width: 35%;
 }
-.container .rezbod .leftcol {
-  width: 35%;
-  display: flex;
-  justify-content: center;
+.container .midsect .rezbod .leftcol {
   background: lightseagreen;
-  margin: 0 2.5%;
-  margin-top: 2.5%;
-  padding: 1%;
   width: 100%;
 }
-@media (max-500px) {
-  .container .rezbod .leftcol {
-    width: 100%;
-  }
-}
-.container .rezbod .rightcol {
-  width: 55%;
-  background: lightseagreen;
-  margin: 0 2.5%;
-  margin-top: 2.5%;
-  padding: 1%;
-}
-.container .rezbod .leftcol2 {
-  width: 35%;
-  display: flex;
-  justify-content: center;
+.container .midsect .rezbod .leftcol2 {
   background: white;
-  margin: 0%;
-  margin-bottom: 5%;
   width: 100%;
 }
-.container .rezbod .rightcol2 {
+.container .midsect .rezbod2 {
+  display: flex;
+  flex-direction: column;
   width: 55%;
-  background: white;
-  margin: 0%;
-  margin-bottom: 5%;
+  margin: 0;
 }
-@media (max-width: 500px) {
-  .container .rezbod {
-    display: flex;
-    flex-direction: column;
-    background: red;
-  }
+.container .midsect .rezbod2 .rightcol {
+  background: lightseagreen;
+  width: 100%;
+}
+.container .midsect .rezbod2 .rightcol2 {
+  background: white;
+  width: 100%;
 }

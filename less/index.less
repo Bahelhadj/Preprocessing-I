@@ -52,15 +52,6 @@ table {
 * {
     box-sizing: border-box;
 }
-.right {
-	width: 55%;
-}
-.left {
-	width: 35%;
-	display: flex;
-	justify-content: center;
-}
-
 html, body {
     height: 100%;
 }
@@ -79,10 +70,6 @@ h3 {
 b {	
 	font-weight: 700;
 	font-size: 1.1rem;
-}
-p {
-	width: 100%;
-	padding: 20px;
 }
 @font-face {
 	font-family: Nike;
@@ -156,49 +143,39 @@ p {
 			border-right: none;
 		}
 	}
-	.rezbod {
+	.midsect {
 		display: flex;
-		flex-direction: column;
-		width: 35%;
-		.leftcol {
-			.left;
-			background: @mainblue;
-			margin: 0 2.5%;
-			margin-top: 2.5%;
-			padding: 1%;
-			width: 100%;
-			@media(max-500px) {
+		width: 100%;
+		justify-content: space-between;
+		.rezbod {
+			display: flex;
+			flex-direction: column;
+			width: 35%;
+			.leftcol {
+				background: @mainblue;
+				width: 100%;
+			}
+			.leftcol2 {
+				background: white;
 				width: 100%;
 			}
 		}
-		.rightcol {
-			.right;
-			background: @mainblue;
-			margin: 0 2.5%;
-			margin-top: 2.5%;
-			padding: 1%;
-		}
-		.leftcol2 {
-			.left;
-			background: white;
-			margin: 0%;
-			margin-bottom: 5%;
-			width: 100%;
-		}
-		.rightcol2 {
-			.right;
-			background: white;
-			margin: 0%;
-			margin-bottom: 5%;
-		}
-		@media(max-width: 500px) {
+		.rezbod2 {
 			display: flex;
 			flex-direction: column;
-			background: red;
+			width: 55%;
+			margin: 0;
+			.rightcol {
+				background: @mainblue;
+				width: 100%;
+			}
+	
+			.rightcol2 {
+				background: white;
+				width: 100%;
+			}
 		}
 
-	}
-	.footer {
 	}
 }
 
