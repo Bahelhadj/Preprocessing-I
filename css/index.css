@@ -133,6 +133,9 @@ body {
 * {
   font-size: 62.5%;
 }
+ul {
+  margin-left: 1.05rem;
+}
 .bodrez {
   display: flex;
   flex-direction: column;
@@ -141,6 +144,9 @@ body {
   display: flex;
   justify-content: center;
   padding: 5px;
+}
+.padthai {
+  padding: 10px;
 }
 h2 {
   font-weight: bold;
@@ -161,7 +167,6 @@ b {
 }
 .container {
   max-width: 800px;
-  height: 100vw;
   width: 100%;
   margin: 0 auto;
   background: #f3f3f3;
@@ -356,9 +361,18 @@ b {
 }
 .container .midsect {
   display: flex;
+  flex-flow: row wrap;
   width: 100%;
+  max-width: 800px;
   justify-content: space-evenly;
-  Margin-top: 2.5%;
+  Margin: 2.5% 0;
+}
+@media (max-width: 500px) {
+  .container .midsect {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .container .midsect .rezbod {
   display: flex;
@@ -372,15 +386,25 @@ b {
   justify-content: center;
   padding: 5px;
 }
+@media (max-width: 500px) {
+  .container .midsect .rezbod .leftcol {
+    height: 100%;
+  }
+}
 .container .midsect .rezbod .leftcol2 {
   background: white;
   width: 100%;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .container .midsect .rezbod .leftcol2 {
+    width: 100%;
+  }
 }
 .container .midsect .rezbod2 {
   display: flex;
   flex-direction: column;
   width: 55%;
-  margin: 0;
 }
 .container .midsect .rezbod2 .rightcol {
   background: lightseagreen;
@@ -392,4 +416,5 @@ b {
 .container .midsect .rezbod2 .rightcol2 {
   background: white;
   width: 100%;
+  padding: 10px;
 }

@@ -58,6 +58,9 @@ html, body {
 * {
 	font-size: 62.5%;
 }
+ul {
+	margin-left: 1.05rem;
+}
 .bodrez {
 	display: flex;
 	flex-direction: column;
@@ -66,6 +69,9 @@ html, body {
 	display: flex;
 	justify-content: center;
 	padding: 5px;
+}
+.padthai {
+	padding: 10px;
 }
 h2 {
 	font-weight: bold;
@@ -86,7 +92,6 @@ b {
 }
 .container {
 	max-width: 800px;
-	height: 100vw;
 	width:100%;
 	margin: 0 auto;
 	background: @hoody;
@@ -155,9 +160,16 @@ b {
 	}
 	.midsect {
 		display: flex;
+		flex-flow: row wrap;
 		width: 100%;
+		max-width: 800px;
 		justify-content: space-evenly;
-		Margin-top: 2.5%;
+		Margin: 2.5% 0;
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
 		.rezbod {
 			.bodrez;
 			width: 35%;
@@ -165,16 +177,22 @@ b {
 				background: @mainblue;
 				width: 100%;
 				.centertext;
+				@media (max-width: 500px) {
+					height: 100%;
+				}
 			}
 			.leftcol2 {
 				background: white;
 				width: 100%;
+				.padthai;
+				@media (max-width: 500px) {
+					width: 100%;
+				}
 			}
 		}
 		.rezbod2 {
 			.bodrez;
 			width: 55%;
-			margin: 0;
 			.rightcol {
 				background: @mainblue;
 				width: 100%;
@@ -184,6 +202,7 @@ b {
 			.rightcol2 {
 				background: white;
 				width: 100%;
+				.padthai;
 			}
 		}
 
