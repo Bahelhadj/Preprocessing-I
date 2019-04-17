@@ -130,6 +130,14 @@ table {
 * {
   box-sizing: border-box;
 }
+.right {
+  width: 55%;
+}
+.left {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
 html,
 body {
   height: 100%;
@@ -360,12 +368,17 @@ p {
 }
 .container .rezbod .leftcol {
   width: 35%;
+  display: flex;
+  justify-content: center;
   background: lightseagreen;
   margin: 0 2.5%;
   margin-top: 2.5%;
   padding: 1%;
-  display: flex;
-  justify-content: center;
+}
+@media (max-500px) {
+  .container .rezbod .leftcol {
+    width: 100%;
+  }
 }
 .container .rezbod .rightcol {
   width: 55%;
@@ -373,22 +386,27 @@ p {
   margin: 0 2.5%;
   margin-top: 2.5%;
   padding: 1%;
-  display: flex;
-  justify-content: center;
 }
 .container .rezbod .leftcol2 {
   width: 35%;
+  display: flex;
+  justify-content: center;
   background: white;
   margin: 0%;
   margin-bottom: 5%;
-  padding: %;
 }
 .container .rezbod .rightcol2 {
   width: 55%;
   background: white;
   margin: 0%;
   margin-bottom: 5%;
-  padding: %;
+}
+@media (max-width: 500px) {
+  .container .rezbod {
+    display: flex;
+    flex-direction: column;
+    background: red;
+  }
 }
 .container .segundo {
   margin-bottom: 5%;
